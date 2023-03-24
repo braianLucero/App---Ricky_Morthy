@@ -1,0 +1,7 @@
+.cards_container{
+    display: flex;
+    padding: 2px;
+    border:5px solid rgba(236, 225, 233, 0.8);
+    /* background-color: antiquewhite; */
+}
+
