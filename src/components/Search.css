@@ -1,13 +1,16 @@
 .search {
   display: flex;
   margin-top: 20px;
-  margin-left: 500px;
+  margin-left: 550px;
 }
 .search .input {
-  background: #fff;
+  text-align: center;
+  background: rgb(255, 255, 255);
   color: #000;
-  width: 250px;
-  border-radius: 5px;
+  width: 150px;
+  height: 25px;
+  font-size: larger;
+  border-radius: 9px;
 }
 
 .boton {

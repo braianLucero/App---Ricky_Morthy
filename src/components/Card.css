@@ -12,11 +12,22 @@
   font-size: 25px;
   border: 1.2px solid rgb(66, 66, 66);
   border-radius: 10px;
+  transition: all 1s ease;
+}
+.card button:hover {
+  color: rgba(255, 255, 255, 0.815);
+  background-color: rgba(255, 0, 221, 0.219);
 }
 .card h2 {
   width: 100%;
   color: rgba(240, 0, 248, 0.486);
   font-size: 20px;
+  transition: all 0.3s ease;
+}
+.card h2:hover {
+  background-color: rgba(255, 0, 191, 0.829);
+  color: #fff;
+  border-radius: 9px;
 }
 .card img {
   width: 100%;
