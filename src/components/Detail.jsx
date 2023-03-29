@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./Detail.css";
 export default function Detail(props) {
   const [infoDetail, setInfo] = useState({});
   const { id } = useParams();
@@ -21,19 +22,21 @@ export default function Detail(props) {
     return setInfo({ id });
   }, [id]);
   return (
-    <div>
-      <div>
-        <button onClick={backHome}>Volver</button>
+    <div className="detail-contenedor">
+      <div className="btn">
+        <button className="volver" onClick={backHome}>
+          Volver
+        </button>
       </div>
       {infoDetail.id ? (
-        <div>
-          <h1>{infoDetail.name}</h1>
+        <div className="detail-hijo">
+          <h5>{infoDetail.name}</h5>
           <h5>{infoDetail.status}</h5>
           <h5>{infoDetail.species}</h5>
           <h5>{infoDetail.genero}</h5>
           <h5>{infoDetail.origin?.name}</h5>
           <div>
-            <img src={infoDetail.image} alt={infoDetail.name} />
+            <img className="img" src={infoDetail.image} alt={infoDetail.name} />
           </div>
         </div>
       ) : (
