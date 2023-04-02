@@ -1,11 +1,13 @@
 import "./App.css";
 import React, { useState, useEffect, Component } from "react";
 import axios from "axios";
-import Cards from "./components/Cards";
-import Nav from "./components/Nav";
-import About from "./components/About";
-import Detail from "./components/Detail";
+import { useLocation } from "react-router-dom";
+import Cards from "./components/Cards/Cards";
+import Nav from "./components/Nav/Nav";
+import About from "./components/About/About";
+import Detail from "./components/Detail/Detail";
 import { Routes, Route } from "react-router-dom";
+import Form from "./components/Form/Form";
 function App() {
   const [characters, setCharacters] = useState([]);
 
@@ -34,12 +36,14 @@ function App() {
     <div className="App">
       <Nav onSearch={onSearch} />
       <Routes>
+        <Route path="form" element={<Form />} />
         <Route
           path="/home"
           element={<Cards onClose={onClose} characters={characters} />}
         />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:id" element={<Detail />} />
+        <Route />
       </Routes>
     </div>
   );
