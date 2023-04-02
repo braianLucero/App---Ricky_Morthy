@@ -6,13 +6,14 @@
 }
 
 .contenedor-form {
+  background-image: url(./Fondos-de-pantalla-Rick-y-Morty-Wallpapers-gratistodo.com-10.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 40%;
-  height: 250px;
+  width: 100%;
+  height: 625px;
   display: flex;
-  margin-top: 50px;
-  margin-left: 398px;
+  /* margin-top: 50px; */
+  /* margin-left: 398px; */
   /* background: red; */
   justify-content: center;
   align-items: center;
@@ -21,27 +22,30 @@
 
 input[type="email"],
 input[type="password"] {
-  outline: none;
   width: 100%;
+  background: rgba(0, 0, 0, 0.048);
+  color: #000;
+  outline: none;
   padding: 15px 10px;
   margin-bottom: 20px;
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid rgba(255, 254, 254, 0);
   font-family: "Slabo 27px", serif;
   font-size: 18px;
-  opacity: 0.6;
+  /* opacity: 0.9; */
 }
 
 .formulario input[type="email"]:focus,
 .formulario input[type="password"]:focus {
-  border-bottom: 2px solid rgb(255, 255, 255);
-  opacity: 0.9;
+  border-bottom: 2px solid #000;
+  opacity: 2;
+  background: rgba(255, 255, 255, 0.151);
 }
 
 .formulario .btn {
   width: 100%;
   text-align: center;
-  background: #246eb9;
+  background: #1b3044ee;
   color: #fff;
   border: none;
   display: block;
@@ -52,6 +56,6 @@ input[type="password"] {
   font-size: 20px;
 }
 
-.formulario .btn:hover {
-  background: #4357ad;
+.formulario .btn:focus {
+  background: #171c31c0;
 }

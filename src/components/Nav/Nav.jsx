@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 export default function Nav(props) {
   return (
     <div>
+      <Link to="/">
+        <button className="btn1"> Out</button>
+      </Link>
       <Link to="/home">
         <button className="btn1">Home</button>
       </Link>
