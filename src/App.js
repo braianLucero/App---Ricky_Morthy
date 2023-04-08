@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Detail from "./components/Detail/Detail";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Form from "./components/Form/Form";
+import Favorites from "./components/Favorites";
 function App() {
   const [characters, setCharacters] = useState([]);
   const location = useLocation();
@@ -60,9 +61,12 @@ function App() {
           path="/home"
           element={<Cards onClose={onClose} characters={characters} />}
         />
-        <Route path="/about" element={<About />} />
-        <Route path="/detail/:id" element={<Detail />} />
-        <Route />
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/detail/:id" element={<Detail />}></Route>
+        <Route
+          path="/favorites"
+          element={<Favorites onClose={onClose} />}
+        ></Route>
       </Routes>
     </div>
   );

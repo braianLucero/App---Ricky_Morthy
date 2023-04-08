@@ -3,7 +3,7 @@ import SearchBar from "../Search/SearchBar";
 import "./Nav.css";
 import { Link } from "react-router-dom";
 
-export default function Nav(props) {
+export default function Nav({ onSearch }) {
   return (
     <div>
       <Link to="/">
@@ -15,7 +15,10 @@ export default function Nav(props) {
       <Link to="/about">
         <button className="btn1">About</button>
       </Link>
-      <SearchBar onSearch={props.onSearch} />
+      <Link to="/favorites">
+        <button className="btn1">Favorites</button>
+      </Link>
+      <SearchBar onSearch={onSearch} />
     </div>
   );
 }
