@@ -8,14 +8,12 @@ import Detail from "./components/Detail/Detail";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Form from "./components/Form/Form";
 import Favorites from "./components/Favorites";
+import { EMAIL, PASSWORD } from "./constEmail-Pasword";
 function App() {
   const [characters, setCharacters] = useState([]);
   const location = useLocation();
   const [access, setAccess] = useState(false);
   const navigate = useNavigate();
-
-  const EMAIL = "brasanluc123@gmail.com";
-  const PASSWORD = "200217";
 
   function login(data) {
     if (data.name === EMAIL && data.password === PASSWORD) {
