@@ -1,0 +1,43 @@
+.card {
+  /* width: 100%; */
+  border-bottom: 4px solid rgba(238, 237, 240, 0.521);
+  border-radius: 30px;
+  margin: 20px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.card button {
+  width: 61%;
+  background-color: rgba(0, 255, 21, 0.541);
+  font-size: 25px;
+  border: 1.2px solid rgb(66, 66, 66);
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.card button:hover {
+  color: rgba(255, 255, 255, 0.815);
+  background-color: rgba(255, 0, 221, 0);
+}
+.card .btncorazon {
+  width: 10%;
+  margin-right: 15px;
+  font-size: 20px;
+  border: none;
+  background: rgba(8, 238, 0, 0);
+}
+.card h2 {
+  width: 100%;
+  color: rgba(8, 248, 0, 0.781);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.card h2:hover {
+  background-color: rgba(255, 255, 255, 0.438);
+  color: rgb(0, 0, 0);
+  border-radius: 9px;
+}
+.card img {
+  width: 75%;
+  margin-top: 10px;
+  border-radius: 10px;
+}

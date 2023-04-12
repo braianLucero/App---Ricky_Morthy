@@ -1,0 +1,15 @@
+.btn1 {
+  color: #fff;
+  margin: 20px;
+  font-size: larger;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.4s ease;
+  border-bottom: 2px solid rgba(19, 223, 0, 0.596);
+  border-radius: 5px;
+}
+
+.btn1:hover {
+  color: #fff;
+  background: rgba(0, 255, 34, 0.192);
+}
