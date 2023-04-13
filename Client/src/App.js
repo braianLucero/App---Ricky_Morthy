@@ -39,6 +39,9 @@ function App() {
         } else {
           window.alert("¡No hay personajes con este ID!");
         }
+      })
+      .catch((error) => {
+        alert("No hay mas cartas!!!");
       });
   }
   function onClose(id) {
