@@ -9,6 +9,7 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Form from "./components/Form/Form";
 import Favorites from "./components/Favorites";
 import { EMAIL, PASSWORD } from "./constEmail-Pasword";
+
 function App() {
   const [characters, setCharacters] = useState([]);
   const location = useLocation();
